@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TicTacToe AI</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main>
+  <h1>TicTacToe</h1>
+
+  <div class="controls">
+    <label>Turno: <span id="turnLabel">X</span></label>
+    <label>
+      Modo:
+      <select id="modeSelect">
+        <option value="human-vs-ai">Humano vs IA</option>
+        <option value="human-vs-human">Humano vs Humano</option>
+      </select>
+    </label>
+    <label>
+      Dificultad:
+      <select id="difficulty">
+        <option value="easy">Fácil</option>
+        <option value="hard" selected>Difícil</option>
+      </select>
+    </label>
+    <button id="resetBtn">Reiniciar</button>
+  </div>
+
+  <div id="board" class="board"></div>
+
+  <div class="status">
+    <p id="statusText">Haz clic en una casilla para jugar.</p>
+  </div>
+
+  <footer>
+    <p>IA Minimax implementada en JavaScript.</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
